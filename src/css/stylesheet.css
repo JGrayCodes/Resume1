@@ -6,11 +6,11 @@ header, footer {
     background-color: rgb(0, 0, 0);
 }
 
-.heading-font-color1 {
+.header-footer-heading-font-color {
     color: rgb(160, 182, 255);
 }
 
-.heading-font-color2 {
+.header-footer-p-text--font-color {
     color: rgb(220, 227, 253);
 }
 
