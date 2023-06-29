@@ -30,15 +30,21 @@ h1 {
 }
 
 aside {
-    background-color: rgb(224, 231, 255);
+    background-image: url(../images/aside-background.png);
+    background-repeat: no-repeat;
     /* create extra space (padding) within the aside element (5px all around) */
     padding: 5px;
-    margin-right: 50%
+}
+
+aside>ul {
+    list-style-type: none;
+    padding-left: 25px;
 }
 
 section {
     /* create extra space (margin) outside of each section of the article (50px all around) */
     margin: 50px;
+    margin-left: 90px;
 }
 
 h2,
