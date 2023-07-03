@@ -1,0 +1,58 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* remove the margins from around the entire document */
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: rgb(0, 20, 80);
+    /* create extra space (padding) within the header and footer elements (top & bottom = 25px; right & left = 50px) */
+    padding: 25px 50px;
+    text-align: center;
+}
+
+.header-footer-heading-font-color {
+    color: rgb(160, 182, 255);
+}
+
+.header-footer-p-text-font-color {
+    color: rgb(220, 227, 253);
+}
+
+#profile-photo {
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+}
+
+h1 {
+    color: rgb(0, 45, 192);
+}
+
+aside {
+    background-image: url(../images/aside-background.png);
+    background-repeat: no-repeat;
+    /* create extra space (padding) within the aside element (5px all around) */
+    padding: 5px;
+}
+
+aside>ul {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+section {
+    /* create extra space (margin) outside of each section of the article (50px all around) */
+    margin: 50px;
+    margin-left: 90px;
+}
+
+h2,
+h3 {
+    color: rgb(0, 37, 157);
+}
+
+p,
+li {
+    color: rgb(0, 29, 144);
+}
