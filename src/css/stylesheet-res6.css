@@ -8,7 +8,7 @@ header,
 footer {
     background-color: rgb(0, 20, 80);
     /* create extra space (padding) within the header and footer elements (top & bottom = 25px; right & left = 50px) */
-    padding: 25px 50px;
+    padding: 25px 100px 0px;
     text-align: center;
 }
 
@@ -16,13 +16,15 @@ footer {
     color: rgb(160, 182, 255);
 }
 
-.header-footer-p-text-font-color {
+.header-p-text-font-color {
     color: rgb(220, 227, 253);
 }
 
 #profile-photo {
     border: 3px solid #f3f3f3;
     border-radius: 50%;
+    position: relative;
+    top: 40px;
 }
 
 h1 {
@@ -34,19 +36,20 @@ aside {
     background-repeat: no-repeat;
     /* create extra space (padding) within the aside element (5px all around) */
     padding: 5px;
-    position: sticky;
-    top: 0;
+    /* fixed position of aside */
+    position: fixed;
 }
 
 aside>ul {
     list-style-type: none;
     padding-left: 25px;
+    padding-right: 45px;
 }
 
 section {
     /* create extra space (margin) outside of each section of the article (50px all around) */
     margin: 50px;
-    margin-left: 90px;
+    margin-left: 200px;
 }
 
 h2,
