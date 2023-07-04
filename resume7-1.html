@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julie's Resumé 7-1</title>
     <!-- Link tag to link in the stylesheet -->
-    <link rel="stylesheet" type href="./src/css/stylesheet-res6.css">
+    <link rel="stylesheet" type href="./src/css/stylesheet-res7.css">
     <link rel="icon" type="image/x-icon" href="./src/images/JG-favicon.ico">
 </head>
 
@@ -155,8 +155,27 @@
         <h2 class="header-footer-heading-font-color" id="contact"> Contact </h2>
 
         <form action="https://formsubmit.co/j.graycodes@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email address" required>
+            <p>
+                <label for="full-name"> Full name: </label>
+                <input type="text" id="full-name" name="contact-full-name" placeholder="Your name" required>
+            </p>
+
+            <p>
+                <label for="email"> Email address: </label>
+                <input type="email" id="email" name="contact-email" placeholder="Your email address" required>
+            </p>
+
+            <p>
+                <label for="email-subject"> Email Subject:</label>
+                <select name="_subject" id="email-subject" name="email-subject" title="Required" required>
+                    <option value="select"> Select a subject</option>
+                    <option value="job-opp-recruiter"> Job opportunity from a recruiter </option>
+                    <option value="job-opp-direct"> Job opportunity directly from a business </option>
+                    <option value="pitch-idea"> Pitch Idea </option>
+                    <option value="website-feedback"> Website Feedback </option>
+                    <option value="other"> Other </option>
+            </p>
+
             <button type="submit">Send</button>
         </form>
 
