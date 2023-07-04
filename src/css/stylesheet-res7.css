@@ -65,6 +65,7 @@ li {
 
 footer {
     background-color: rgb(0, 20, 80);
+    min-height: 570px;
     /* create extra space (padding) within the header and footer elements */
     /* (top & bottom = 25px; right & left = 50px) */
     padding: 25px 100px 25px;
