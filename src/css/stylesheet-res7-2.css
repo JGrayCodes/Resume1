@@ -1,0 +1,163 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* remove the margins from around the entire document */
+    margin: 0;
+}
+
+header {
+    background-color: rgb(0, 20, 80);
+    /* create extra space (padding) within the header elements */
+    /* (top = 25px; right & left = 100px & bottom = 0px) */
+    padding: 25px 100px 0px;
+    text-align: center;
+}
+
+.header-footer-heading-font-color {
+    color: rgb(160, 182, 255);
+}
+
+.header-p-text-font-color {
+    color: rgb(220, 227, 253);
+}
+
+#profile-photo {
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+}
+
+aside {
+    background-image: url(../images/aside-background.png);
+    background-repeat: no-repeat;
+    /* create extra space (padding) within the aside element (5px all around) */
+    padding: 5px;
+    /* fixed position of aside */
+    position: fixed;
+}
+
+aside>ul {
+    list-style-type: none;
+    padding-left: 25px;
+    padding-right: 45px;
+}
+
+section {
+    /* create extra space (margin) outside of each section of the article */
+    /* (50px all around) */
+    margin: 50px;
+    margin-left: 200px;
+}
+
+h2,
+h3 {
+    color: rgb(0, 37, 157);
+}
+
+section>p,
+li {
+    color: rgb(0, 29, 144);
+}
+
+footer {
+    background-color: rgb(0, 20, 80);
+    /* create extra space (padding) within the header and footer elements */
+    /* (top & bottom = 25px; right & left = 50px) */
+    padding: 25px 100px 25px;
+    text-align: center;
+}
+
+form {
+    /* Center the form on the page */
+    background-color: rgb(160, 182, 255);
+    margin: 0 auto;
+    width: 600px;
+    /* Form outline */
+    padding: 1em;
+    border-radius: 1em;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 135px;
+    text-align: right;
+    color: rgb(0, 20, 80);
+    /*font: 1em serif;*/
+}
+
+form>p {
+    color: rgb(0, 20, 80);
+}
+
+span {
+    color: red;
+}
+
+input,
+select {
+    margin-left: 10px;
+    background-color: rgb(220, 227, 253);
+}
+
+#full-name,
+#email {
+    width: 251.2px;
+}
+
+textarea {
+    height: 200px;
+    width: 251.2px;
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+    margin-left: 10px;
+    background-color: rgb(220, 227, 253);
+
+}
+
+#submit-button {
+    font-size: medium;
+}
+
+#github-logo {
+    position: relative;
+    top: 25px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+/* Animation of social media icon, only on hover, follows */
+
+#github-logo:hover {
+
+    animation-name: github-logo-animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+/* Animation code */
+
+@keyframes github-logo-animation {
+    25% {
+        /* animation starts with logo rotating clockwise 180 degrees */
+        transform: rotate(180deg);
+    }
+
+    50% {
+        /* animation continues with logo rotating clockwise from 180 to 360 degrees */
+        transform: rotate(360deg);
+        /* the filter below creates a violet-colored shadow lightening & darkening */
+        /* and actually starts as soon as the animation begins */
+        /* and ends at end of animation, slowly darkening again */
+        filter: drop-shadow(8px 8px 10px rgb(252, 119, 252));
+    }
+
+    100% {
+        /* animation ends with logo rotating anti-clockwise from 360 degrees  */
+        /* back to 1 degree */
+        transform: rotate(1deg);
+    }
+
+}
