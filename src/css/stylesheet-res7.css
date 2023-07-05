@@ -68,22 +68,55 @@ footer {
 }
 
 form {
-    padding: 10px;
+    /* Center the form on the page */
+    background-color: rgb(160, 182, 255);
+    margin: 0 auto;
+    width: 600px;
+    /* Form outline */
+    padding: 1em;
+    border-radius: 1em;
 }
-
 
 label {
     /* Uniform size & alignment */
     display: inline-block;
-    width: 200px;
+    width: 135px;
     text-align: right;
-    color: rgb(220, 227, 253);
+    color: rgb(0, 20, 80);
     /*font: 1em serif;*/
+}
+
+form>p {
+    color: rgb(0, 20, 80);
+}
+
+span {
+    color: red;
+}
+
+input,
+select {
+    margin-left: 10px;
+    background-color: rgb(220, 227, 253);
 }
 
 #full-name,
 #email {
     width: 251.2px;
+}
+
+textarea {
+    height: 200px;
+    width: 251.2px;
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+    margin-left: 10px;
+    background-color: rgb(220, 227, 253);
+
+}
+
+#submit-button {
+    font-size: medium;
 }
 
 #github-logo {
