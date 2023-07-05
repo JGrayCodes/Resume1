@@ -27,10 +27,6 @@ header {
     top: 40px;
 }
 
-h1 {
-    color: rgb(0, 45, 192);
-}
-
 aside {
     background-image: url(../images/aside-background.png);
     background-repeat: no-repeat;
@@ -65,13 +61,9 @@ li {
 
 footer {
     background-color: rgb(0, 20, 80);
-    min-height: 570px;
     /* create extra space (padding) within the header and footer elements */
     /* (top & bottom = 25px; right & left = 50px) */
     padding: 25px 100px 25px;
-}
-
-footer>h2 {
     text-align: center;
 }
 
@@ -96,9 +88,8 @@ label {
 
 #github-logo {
     position: relative;
-    top: 15px;
-    height: 100px;
-    width: 100px;
+    top: 25px;
+    width: 70px;
     border-radius: 50%;
 }
 
@@ -107,7 +98,7 @@ label {
 #github-logo:hover {
 
     animation-name: github-logo-animation;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
 
