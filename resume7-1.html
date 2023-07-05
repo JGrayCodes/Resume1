@@ -156,19 +156,20 @@
 
         <form action="https://formsubmit.co/j.graycodes@gmail.com" method="POST">
             <p>
-                <label for="full-name"> Full name: </label>
-                <input type="text" id="full-name" name="contact-full-name" placeholder="Your name" required>
+                <label for="full-name"> Full name <span> * </span> </label>
+                <input type="text" id="full-name" name="contact-full-name" placeholder="Your name" title="Required, letters and spaces only"
+                    pattern="^[a-zA-Z]+( [a-zA-Z]+)*$" required>
             </p>
 
             <p>
-                <label for="email"> Email address: </label>
+                <label for="email"> Email address <span> * </span> </label>
                 <input type="email" id="email" name="contact-email" placeholder="Your email address" required>
             </p>
 
             <p>
-                <label for="email-subject"> Email Subject:</label>
-                <select name="_subject" id="email-subject" name="email-subject" title="Required" required>
-                    <option value="select"> Select a subject</option>
+                <label for="email-subject"> Email Subject <span> * </span> </label>
+                <select name="_subject" id="email-subject" name="email-subject" title="Required, please select a subject" required>
+                    <option value="" disabled selected> <span> &lt </span> Select a subject <span> &gt </span> </option>
                     <option value="job-opp-recruiter"> Job opportunity from a recruiter </option>
                     <option value="job-opp-direct"> Job opportunity directly from a business </option>
                     <option value="pitch-idea"> Pitch Idea </option>
@@ -177,8 +178,17 @@
                 </select>
             </p>
 
-            <button type="submit">Send</button>
+            <p>
+                <label for="contact-msg"> Message: </label>
+                <textarea id="contact-msg" name="contact-msg"> </textarea>
+            </p>
+
+            <button type="submit" id="submit-button"> Send your message </button>
+
+            <p> <span> * </span> Required fields </p>
+
         </form>
+        
 
         <!--Social media icon link to open in new tab and also animated using css when you hover over it-->
         <a href="https://github.com/JGrayCodes" title="Julie's GitHub Page" rel="noopener noreferrer" target="_blank">
