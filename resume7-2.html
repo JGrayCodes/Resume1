@@ -21,7 +21,13 @@
             tempor incididunt ut labore et dolore magna aliqua. Velit dignissim sodales ut eu. Gravida neque convallis a
             cras semper auctor. </p>
 
-        <img src="src/images/julie-headshot-square-png.png" alt="Profile photo of Julie Gray" id="profile-photo">
+
+        <picture>
+            <source media="(max-width: 450px)" srcset="src/images/julie-headshot-square-png.png" />
+            <source media="(max-width: 900px)" srcset="src/images/julie-mid-length-lrg.jpg" />
+            <img src="src/images/julie-full-length.jpg" alt="Profile photo of Julie Gray">
+
+        </picture> 
 
     </header>
 
@@ -157,8 +163,8 @@
         <form action="https://formsubmit.co/j.graycodes@gmail.com" method="POST">
             <p>
                 <label for="full-name"> Full name <span> * </span> </label>
-                <input type="text" id="full-name" name="contact-full-name" placeholder="Your name" title="Required, letters and spaces only"
-                    pattern="^[a-zA-Z]+( [a-zA-Z]+)*$" required>
+                <input type="text" id="full-name" name="contact-full-name" placeholder="Your name"
+                    title="Required, letters and spaces only" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$" required>
             </p>
 
             <p>
@@ -168,7 +174,8 @@
 
             <p>
                 <label for="email-subject"> Email Subject <span> * </span> </label>
-                <select name="_subject" id="email-subject" name="email-subject" title="Required, please select a subject" required>
+                <select name="_subject" id="email-subject" name="email-subject"
+                    title="Required, please select a subject" required>
                     <option value="" disabled selected> <span> &lt </span> Select a subject <span> &gt </span> </option>
                     <option value="job-opp-recruiter"> Job opportunity from a recruiter </option>
                     <option value="job-opp-direct"> Job opportunity directly from a business </option>
@@ -188,7 +195,7 @@
             <p> <span> * </span> Required fields </p>
 
         </form>
-        
+
 
         <!--Social media icon link to open in new tab and also animated using css when you hover over it-->
         <a href="https://github.com/JGrayCodes" title="Julie's GitHub Page" rel="noopener noreferrer" target="_blank">
